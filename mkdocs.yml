@@ -1,0 +1,29 @@
+site_name: Tech Test - Django Project
+site_description: "Documentation auto-générée du projet Django"
+site_author: "Noura Bel Hadj Amor"
+
+theme:
+  name: material
+  language: fr
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            show_source: true
+            docstring_section_style: list
+
+nav:
+  - Accueil: index.md
+  - API:
+      - App: api/app.md
+      - Users: api/users.md
+      - Ecole: api/ecole.md
+      - Files: api/files.md
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
