@@ -63,8 +63,7 @@ class EcoleAPITestCase(APITestCase):
             address="Rue de la République",
             city="Sousse",
             postal_code="4000",
-            phone="12345678",
-            students_count=200
+            phone="+216 73 123 456"  # Format international corrigé
         )
         self.detail_url = f"/api/ecoles/{self.ecole.id}/"
 
@@ -140,8 +139,7 @@ class EcoleAPITestCase(APITestCase):
             "address": "Avenue Habib Bourguiba",
             "city": "Tunis",
             "postal_code": "1000",
-            "phone": "99988877",
-            "students_count": 150
+            "phone": "+216 71 998 877",  # Format international corrigé
         }
         response = self.client.post(self.list_create_url, data, format='json')
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
@@ -162,8 +160,7 @@ class EcoleAPITestCase(APITestCase):
             "address": "Rue Liberté",
             "city": "Sfax",
             "postal_code": "3000",
-            "phone": "77766655",
-            "students_count": 100
+            "phone": "+216 74 776 665",  # Format international corrigé
         }
         response = self.client.post(self.list_create_url, data, format='json')
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
@@ -199,8 +196,7 @@ class EcoleAPITestCase(APITestCase):
             "address": "Rue République",
             "city": "Sousse",
             "postal_code": "4000",
-            "phone": "12345678",
-            "students_count": 210
+            "phone": "+216 73 123 456",  # Format international corrigé
         }
         response = self.client.put(self.detail_url, data, format='json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -217,7 +213,14 @@ class EcoleAPITestCase(APITestCase):
             - Status code: 403 Forbidden
         """
         self.authenticate('user', 'userpass')
-        data = {"name": "École Non Autorisée"}
+        # Données incomplètes pour PUT - devrait échouer avec 403 avant validation
+        data = {
+            "name": "École Non Autorisée",
+            "address": "Rue Test",
+            "city": "Test",
+            "postal_code": "1234",
+            "phone": "+216 71 111 111"
+        }
         response = self.client.put(self.detail_url, data, format='json')
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
 

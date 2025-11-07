@@ -1,10 +1,32 @@
-site_name: Tech Test - Django Project
-site_description: "Documentation auto-générée du projet Django"
-site_author: "Noura Bel Hadj Amor"
+site_name: Tech Test - Documentation
+site_description: Documentation complète de l'application Django REST
+site_author: Votre Nom
+repo_url: https://github.com/Noura35/test_tech_ecole_smart_conseil
 
 theme:
   name: material
   language: fr
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Mode sombre
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Mode clair
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
 
 plugins:
   - search
@@ -14,6 +36,7 @@ plugins:
           options:
             show_source: true
             docstring_section_style: list
+
 
 nav:
   - Accueil: index.md

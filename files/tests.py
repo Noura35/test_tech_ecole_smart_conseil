@@ -5,6 +5,8 @@ from rest_framework.test import APITestCase
 from rest_framework import status
 from ecole.models import Ecole
 from .models import File
+import os
+
 
 User = get_user_model()
 

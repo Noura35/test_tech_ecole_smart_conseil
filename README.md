@@ -142,18 +142,7 @@ La documentation sera accessible sur `http://localhost:8000/`
 
 ### Avec Docker
 
-Ajoutez ce service dans votre `docker-compose.yml` :
-```yaml
-  docs:
-    build: .
-    command: mkdocs serve -a 0.0.0.0:8000
-    volumes:
-      - .:/app
-    ports:
-      - "8002:8000"
-```
-
-Puis lancez :
+lancez le service :
 ```bash
 docker-compose up docs
 ```
