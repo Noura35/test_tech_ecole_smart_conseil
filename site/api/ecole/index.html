@@ -1,0 +1,2914 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation auto-générée du projet Django">
+      
+      
+        <meta name="author" content="Noura Bel Hadj Amor">
+      
+      
+      
+        <link rel="prev" href="../users/">
+      
+      
+        <link rel="next" href="../files/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
+    
+    
+      
+        <title>Ecole - Tech Test - Django Project</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#module-ecole" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../.." title="Tech Test - Django Project" class="md-header__button md-logo" aria-label="Tech Test - Django Project" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tech Test - Django Project
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Ecole
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Tech Test - Django Project" class="md-nav__button md-logo" aria-label="Tech Test - Django Project" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Tech Test - Django Project
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Accueil
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    API
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../app/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    App
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../users/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Users
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Ecole
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ecole
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-modeles-ecolemodels" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Modèles (ecole.models)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecole.models.Ecole" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ecole
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecole.models.Ecole.__str__" class="md-nav__link">
+    <span class="md-ellipsis">
+      __str__
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-serialiseurs-ecoleserializers" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Sérialiseurs (ecole.serializers)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecole.serializers.EcoleSerializer" class="md-nav__link">
+    <span class="md-ellipsis">
+      EcoleSerializer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecole.serializers.EcoleSerializer.create" class="md-nav__link">
+    <span class="md-ellipsis">
+      create
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecole.serializers.EcoleSerializer.update" class="md-nav__link">
+    <span class="md-ellipsis">
+      update
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecole.serializers.EcoleSerializer.validate" class="md-nav__link">
+    <span class="md-ellipsis">
+      validate
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecole.serializers.EcoleSerializer.validate_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      validate_name
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecole.serializers.EcoleSerializer.validate_phone" class="md-nav__link">
+    <span class="md-ellipsis">
+      validate_phone
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecole.serializers.EcoleSerializer.validate_postal_code" class="md-nav__link">
+    <span class="md-ellipsis">
+      validate_postal_code
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-vues-ecoleviews" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Vues (ecole.views)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecole.views.ecole_list_create" class="md-nav__link">
+    <span class="md-ellipsis">
+      ecole_list_create
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ecole_list_create">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ecole.views.ecole_list_create--methodes-disponibles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Méthodes disponibles :
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecole.views.ecole_list_create--conditions-dacces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conditions d'accès :
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecole.views.ecole_list_create--reponses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Réponses :
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecole.views.ecole_list_create--exemple-de-requete-post" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemple de requête POST :
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecole.views.ecole_list_create--exemple-de-reponse-get" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemple de réponse (GET) :
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecole.views.ecole_detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      ecole_detail
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ecole_detail">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ecole.views.ecole_detail--methodes-disponibles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Méthodes disponibles :
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecole.views.ecole_detail--parametres" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paramètres :
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecole.views.ecole_detail--conditions-dacces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conditions d'accès :
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecole.views.ecole_detail--reponses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Réponses :
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecole.views.ecole_detail--exemple-de-reponse-get" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemple de réponse (GET) :
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-urls-ecoleurls" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. URLs (ecole.urls)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecole.urls" class="md-nav__link">
+    <span class="md-ellipsis">
+      urls
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="urls">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ecole.urls--details-des-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Détails des Endpoints :
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Détails des Endpoints :">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ecole.urls--get-ecoles" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 GET /ecoles/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecole.urls--post-ecoles" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 POST /ecoles/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecole.urls--get-ecolesintpk" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 GET /ecoles/&lt;int:pk&gt;/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecole.urls--put-ecolesintpk" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 PUT /ecoles/&lt;int:pk&gt;/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecole.urls--delete-ecolesintpk" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 DELETE /ecoles/&lt;int:pk&gt;/
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-tests-ecoletests" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Tests (ecole.tests)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Tests (ecole.tests)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-tableau-recapitulatif-des-tests-crud" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1. Tableau récapitulatif des tests CRUD
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-notes-sur-les-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2. Notes sur les tests
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../files/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Files
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-modeles-ecolemodels" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Modèles (ecole.models)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecole.models.Ecole" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ecole
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecole.models.Ecole.__str__" class="md-nav__link">
+    <span class="md-ellipsis">
+      __str__
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-serialiseurs-ecoleserializers" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Sérialiseurs (ecole.serializers)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecole.serializers.EcoleSerializer" class="md-nav__link">
+    <span class="md-ellipsis">
+      EcoleSerializer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecole.serializers.EcoleSerializer.create" class="md-nav__link">
+    <span class="md-ellipsis">
+      create
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecole.serializers.EcoleSerializer.update" class="md-nav__link">
+    <span class="md-ellipsis">
+      update
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecole.serializers.EcoleSerializer.validate" class="md-nav__link">
+    <span class="md-ellipsis">
+      validate
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecole.serializers.EcoleSerializer.validate_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      validate_name
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecole.serializers.EcoleSerializer.validate_phone" class="md-nav__link">
+    <span class="md-ellipsis">
+      validate_phone
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecole.serializers.EcoleSerializer.validate_postal_code" class="md-nav__link">
+    <span class="md-ellipsis">
+      validate_postal_code
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-vues-ecoleviews" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Vues (ecole.views)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecole.views.ecole_list_create" class="md-nav__link">
+    <span class="md-ellipsis">
+      ecole_list_create
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ecole_list_create">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ecole.views.ecole_list_create--methodes-disponibles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Méthodes disponibles :
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecole.views.ecole_list_create--conditions-dacces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conditions d'accès :
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecole.views.ecole_list_create--reponses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Réponses :
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecole.views.ecole_list_create--exemple-de-requete-post" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemple de requête POST :
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecole.views.ecole_list_create--exemple-de-reponse-get" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemple de réponse (GET) :
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecole.views.ecole_detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      ecole_detail
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ecole_detail">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ecole.views.ecole_detail--methodes-disponibles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Méthodes disponibles :
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecole.views.ecole_detail--parametres" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paramètres :
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecole.views.ecole_detail--conditions-dacces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conditions d'accès :
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecole.views.ecole_detail--reponses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Réponses :
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecole.views.ecole_detail--exemple-de-reponse-get" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemple de réponse (GET) :
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-urls-ecoleurls" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. URLs (ecole.urls)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecole.urls" class="md-nav__link">
+    <span class="md-ellipsis">
+      urls
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="urls">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ecole.urls--details-des-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Détails des Endpoints :
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Détails des Endpoints :">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ecole.urls--get-ecoles" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 GET /ecoles/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecole.urls--post-ecoles" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 POST /ecoles/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecole.urls--get-ecolesintpk" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 GET /ecoles/&lt;int:pk&gt;/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecole.urls--put-ecolesintpk" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 PUT /ecoles/&lt;int:pk&gt;/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecole.urls--delete-ecolesintpk" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 DELETE /ecoles/&lt;int:pk&gt;/
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-tests-ecoletests" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Tests (ecole.tests)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Tests (ecole.tests)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-tableau-recapitulatif-des-tests-crud" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1. Tableau récapitulatif des tests CRUD
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-notes-sur-les-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2. Notes sur les tests
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="module-ecole">Module Ecole<a class="headerlink" href="#module-ecole" title="Permanent link">&para;</a></h1>
+<p>Le module <strong>Ecole</strong> fournit une <strong>API REST complète</strong> pour la gestion des établissements scolaires, avec :
+- Authentification JWT
+- Gestion des permissions selon le rôle de l'utilisateur</p>
+<p>Le module inclut les composants suivants : <strong>modèles, sérialiseurs, vues, URLs et tests</strong>.</p>
+<hr />
+<h2 id="1-modeles-ecolemodels">1. Modèles (<code>ecole.models</code>)<a class="headerlink" href="#1-modeles-ecolemodels" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Définit le modèle <code>Ecole</code> avec les attributs principaux d’un établissement scolaire.  </li>
+<li>Sert de base pour les opérations CRUD dans l’API.  </li>
+</ul>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<a id="ecole.models.Ecole"></a>
+    <div class="doc doc-contents first">
+            <p class="doc doc-class-bases">
+              Bases: <code><span title="django.db.models.Model">Model</span></code></p>
+
+
+        <p>Représente une école dans le système de gestion.</p>
+<p>Ce modèle contient les informations principales d'une école,
+telles que son nom, son adresse, sa ville, et le nombre d'étudiants inscrits.</p>
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><span title="ecole.models.Ecole.name">name</span></code></b>
+              (<code><span title="str">str</span></code>)
+          –
+          <div class="doc-md-description">
+            <p>Le nom de l'école.</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><span title="ecole.models.Ecole.address">address</span></code></b>
+              (<code><span title="str">str</span></code>)
+          –
+          <div class="doc-md-description">
+            <p>L'adresse complète de l'école.</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><span title="ecole.models.Ecole.city">city</span></code></b>
+              (<code><span title="str">str</span></code>)
+          –
+          <div class="doc-md-description">
+            <p>La ville où se trouve l'école.</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><span title="ecole.models.Ecole.postal_code">postal_code</span></code></b>
+              (<code><span title="str">str</span></code>)
+          –
+          <div class="doc-md-description">
+            <p>Le code postal de l'école.</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><span title="ecole.models.Ecole.phone">phone</span></code></b>
+              (<code><span title="str">str</span></code>)
+          –
+          <div class="doc-md-description">
+            <p>Le numéro de téléphone de contact de l'école.</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><span title="ecole.models.Ecole.students_count">students_count</span></code></b>
+              (<code><span title="int">int</span></code>)
+          –
+          <div class="doc-md-description">
+            <p>Le nombre d'étudiants inscrits.</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><span title="ecole.models.Ecole.created_at">created_at</span></code></b>
+              (<code><span title="datetime">datetime</span></code>)
+          –
+          <div class="doc-md-description">
+            <p>La date de création de l'enregistrement.</p>
+          </div>
+        </li>
+    </ul>
+
+
+
+
+
+
+
+
+              <details class="quote">
+                <summary>Source code in <code>ecole/models.py</code></summary>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Ecole</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Représente une école dans le système de gestion.</span>
+
+<span class="sd">    Ce modèle contient les informations principales d&#39;une école,</span>
+<span class="sd">    telles que son nom, son adresse, sa ville, et le nombre d&#39;étudiants inscrits.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        name (str): Le nom de l&#39;école.</span>
+<span class="sd">        address (str): L&#39;adresse complète de l&#39;école.</span>
+<span class="sd">        city (str): La ville où se trouve l&#39;école.</span>
+<span class="sd">        postal_code (str): Le code postal de l&#39;école.</span>
+<span class="sd">        phone (str): Le numéro de téléphone de contact de l&#39;école.</span>
+<span class="sd">        students_count (int): Le nombre d&#39;étudiants inscrits.</span>
+<span class="sd">        created_at (datetime): La date de création de l&#39;enregistrement.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">name</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">address</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">255</span><span class="p">)</span>
+    <span class="n">city</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">postal_code</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">phone</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">students_count</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">PositiveIntegerField</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">created_at</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">DateTimeField</span><span class="p">(</span><span class="n">auto_now_add</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Retourne le nom de l&#39;école sous forme de chaîne.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</code></pre></div></td></tr></table></div>
+              </details>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="ecole.models.Ecole.__str__" class="doc doc-heading">
+            <code class="highlight language-python"><span class="fm">__str__</span><span class="p">()</span></code>
+
+<a href="#ecole.models.Ecole.__str__" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Retourne le nom de l'école sous forme de chaîne.</p>
+
+
+            <details class="quote">
+              <summary>Source code in <code>ecole/models.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Retourne le nom de l&#39;école sous forme de chaîne.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div><hr />
+<h2 id="2-serialiseurs-ecoleserializers">2. Sérialiseurs (<code>ecole.serializers</code>)<a class="headerlink" href="#2-serialiseurs-ecoleserializers" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Transforme les instances du modèle <code>Ecole</code> en JSON et valide les données entrantes.  </li>
+<li>Exemple :</li>
+<li><code>EcoleSerializer</code> : sérialiseur principal pour créer et mettre à jour les écoles.  </li>
+</ul>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<a id="ecole.serializers.EcoleSerializer"></a>
+    <div class="doc doc-contents first">
+            <p class="doc doc-class-bases">
+              Bases: <code><span title="rest_framework.serializers.ModelSerializer">ModelSerializer</span></code></p>
+
+
+        <p>Le EcoleSerializer gère la sérialisation/désérialisation des données et la validation des champs.</p>
+<p>Ce sérialiseur gère la conversion des instances du modèle Ecole en JSON
+et vice-versa pour les opérations CRUD via l'API REST.</p>
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><span title="ecole.serializers.EcoleSerializer.name">name</span></code></b>
+              (<code><span title="str">str</span></code>)
+          –
+          <div class="doc-md-description">
+            <p>Nom de l'école (requis, max 255 caractères).</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><span title="ecole.serializers.EcoleSerializer.address">address</span></code></b>
+              (<code><span title="str">str</span></code>)
+          –
+          <div class="doc-md-description">
+            <p>Adresse complète de l'école (requis).</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><span title="ecole.serializers.EcoleSerializer.city">city</span></code></b>
+              (<code><span title="str">str</span></code>)
+          –
+          <div class="doc-md-description">
+            <p>Ville où se situe l'école (requis, max 100 caractères).</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><span title="ecole.serializers.EcoleSerializer.postal_code">postal_code</span></code></b>
+              (<code><span title="str">str</span></code>)
+          –
+          <div class="doc-md-description">
+            <p>Code postal de l'école (requis, format: 4 chiffres).</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><span title="ecole.serializers.EcoleSerializer.phone">phone</span></code></b>
+              (<code><span title="str">str</span></code>)
+          –
+          <div class="doc-md-description">
+            <p>Numéro de téléphone au format international (requis).</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><span title="ecole.serializers.EcoleSerializer.students_count">students_count</span></code></b>
+              (<code><span title="int">int</span></code>)
+          –
+          <div class="doc-md-description">
+            <p>Nombre total d'étudiants inscrits (lecture seule).</p>
+          </div>
+        </li>
+    </ul>
+
+
+<details class="validation" open>
+  <summary>Validation</summary>
+  <ul>
+<li>Le nom de l'école doit être unique.</li>
+<li>Le code postal doit contenir exactement 4 chiffres.</li>
+<li>Le numéro de téléphone doit suivre le format international (+216...).</li>
+</ul>
+</details>
+
+
+
+
+
+
+
+              <details class="quote">
+                <summary>Source code in <code>ecole/serializers.py</code></summary>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">  7</span>
+<span class="normal">  8</span>
+<span class="normal">  9</span>
+<span class="normal"> 10</span>
+<span class="normal"> 11</span>
+<span class="normal"> 12</span>
+<span class="normal"> 13</span>
+<span class="normal"> 14</span>
+<span class="normal"> 15</span>
+<span class="normal"> 16</span>
+<span class="normal"> 17</span>
+<span class="normal"> 18</span>
+<span class="normal"> 19</span>
+<span class="normal"> 20</span>
+<span class="normal"> 21</span>
+<span class="normal"> 22</span>
+<span class="normal"> 23</span>
+<span class="normal"> 24</span>
+<span class="normal"> 25</span>
+<span class="normal"> 26</span>
+<span class="normal"> 27</span>
+<span class="normal"> 28</span>
+<span class="normal"> 29</span>
+<span class="normal"> 30</span>
+<span class="normal"> 31</span>
+<span class="normal"> 32</span>
+<span class="normal"> 33</span>
+<span class="normal"> 34</span>
+<span class="normal"> 35</span>
+<span class="normal"> 36</span>
+<span class="normal"> 37</span>
+<span class="normal"> 38</span>
+<span class="normal"> 39</span>
+<span class="normal"> 40</span>
+<span class="normal"> 41</span>
+<span class="normal"> 42</span>
+<span class="normal"> 43</span>
+<span class="normal"> 44</span>
+<span class="normal"> 45</span>
+<span class="normal"> 46</span>
+<span class="normal"> 47</span>
+<span class="normal"> 48</span>
+<span class="normal"> 49</span>
+<span class="normal"> 50</span>
+<span class="normal"> 51</span>
+<span class="normal"> 52</span>
+<span class="normal"> 53</span>
+<span class="normal"> 54</span>
+<span class="normal"> 55</span>
+<span class="normal"> 56</span>
+<span class="normal"> 57</span>
+<span class="normal"> 58</span>
+<span class="normal"> 59</span>
+<span class="normal"> 60</span>
+<span class="normal"> 61</span>
+<span class="normal"> 62</span>
+<span class="normal"> 63</span>
+<span class="normal"> 64</span>
+<span class="normal"> 65</span>
+<span class="normal"> 66</span>
+<span class="normal"> 67</span>
+<span class="normal"> 68</span>
+<span class="normal"> 69</span>
+<span class="normal"> 70</span>
+<span class="normal"> 71</span>
+<span class="normal"> 72</span>
+<span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">EcoleSerializer</span><span class="p">(</span><span class="n">serializers</span><span class="o">.</span><span class="n">ModelSerializer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Le EcoleSerializer gère la sérialisation/désérialisation des données et la validation des champs.</span>
+
+<span class="sd">    Ce sérialiseur gère la conversion des instances du modèle Ecole en JSON</span>
+<span class="sd">    et vice-versa pour les opérations CRUD via l&#39;API REST.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        name (str): Nom de l&#39;école (requis, max 255 caractères).</span>
+<span class="sd">        address (str): Adresse complète de l&#39;école (requis).</span>
+<span class="sd">        city (str): Ville où se situe l&#39;école (requis, max 100 caractères).</span>
+<span class="sd">        postal_code (str): Code postal de l&#39;école (requis, format: 4 chiffres).</span>
+<span class="sd">        phone (str): Numéro de téléphone au format international (requis).</span>
+<span class="sd">        students_count (int): Nombre total d&#39;étudiants inscrits (lecture seule).</span>
+
+<span class="sd">    Validation:</span>
+<span class="sd">        - Le nom de l&#39;école doit être unique.</span>
+<span class="sd">        - Le code postal doit contenir exactement 4 chiffres.</span>
+<span class="sd">        - Le numéro de téléphone doit suivre le format international (+216...).</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+
+
+    <span class="c1"># Champ calculé en lecture seule</span>
+    <span class="n">students_count</span> <span class="o">=</span> <span class="n">serializers</span><span class="o">.</span><span class="n">IntegerField</span><span class="p">(</span><span class="n">read_only</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="k">class</span><span class="w"> </span><span class="nc">Meta</span><span class="p">:</span>
+        <span class="n">model</span> <span class="o">=</span> <span class="n">Ecole</span>
+        <span class="n">fields</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;address&#39;</span><span class="p">,</span> <span class="s1">&#39;city&#39;</span><span class="p">,</span> <span class="s1">&#39;postal_code&#39;</span><span class="p">,</span> <span class="s1">&#39;phone&#39;</span><span class="p">,</span> <span class="s1">&#39;students_count&#39;</span><span class="p">)</span>
+        <span class="n">read_only_fields</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;students_count&#39;</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">validate_postal_code</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Valide le format du code postal tunisien.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            value (str): Le code postal à valider.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            str: Le code postal validé.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            ValidationError: Si le code postal n&#39;est pas composé de 4 chiffres.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;^\d</span><span class="si">{4}</span><span class="s1">$&#39;</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="n">serializers</span><span class="o">.</span><span class="n">ValidationError</span><span class="p">(</span>
+                <span class="s2">&quot;Le code postal doit contenir exactement 4 chiffres.&quot;</span>
+            <span class="p">)</span>
+        <span class="k">return</span> <span class="n">value</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">validate_phone</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Valide le format du numéro de téléphone.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            value (str): Le numéro de téléphone à valider.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            str: Le numéro de téléphone validé.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            ValidationError: Si le format du téléphone est invalide.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># Format attendu: +216 XX XXX XXX</span>
+        <span class="n">phone_pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;^\+216\s?\d</span><span class="si">{2}</span><span class="s1">\s?\d</span><span class="si">{3}</span><span class="s1">\s?\d{3,4}$&#39;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">phone_pattern</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="n">serializers</span><span class="o">.</span><span class="n">ValidationError</span><span class="p">(</span>
+                <span class="s2">&quot;Le numéro de téléphone doit être au format international (+216 XX XXX XXX).&quot;</span>
+            <span class="p">)</span>
+        <span class="k">return</span> <span class="n">value</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">validate_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Valide le nom de l&#39;école.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            value (str): Le nom de l&#39;école à valider.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            str: Le nom validé.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            ValidationError: Si le nom est trop court.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">value</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">serializers</span><span class="o">.</span><span class="n">ValidationError</span><span class="p">(</span>
+                <span class="s2">&quot;Le nom de l&#39;école doit contenir au moins 3 caractères.&quot;</span>
+            <span class="p">)</span>
+        <span class="k">return</span> <span class="n">value</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">validate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Validation globale des données de l&#39;école.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data (dict): Données à valider.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            dict: Données validées.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            ValidationError: Si les données ne sont pas cohérentes.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># Validation supplémentaire si nécessaire</span>
+        <span class="k">return</span> <span class="n">data</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">create</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">validated_data</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Crée et retourne une nouvelle instance d&#39;Ecole.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            validated_data (dict): Données validées pour créer l&#39;école.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Ecole: L&#39;instance de l&#39;école créée.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Ecole</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="o">**</span><span class="n">validated_data</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">instance</span><span class="p">,</span> <span class="n">validated_data</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Met à jour et retourne une instance d&#39;Ecole existante.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            instance (Ecole): L&#39;instance existante à mettre à jour.</span>
+<span class="sd">            validated_data (dict): Nouvelles données validées.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Ecole: L&#39;instance mise à jour.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">instance</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">validated_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="n">instance</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+        <span class="n">instance</span><span class="o">.</span><span class="n">address</span> <span class="o">=</span> <span class="n">validated_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;address&#39;</span><span class="p">,</span> <span class="n">instance</span><span class="o">.</span><span class="n">address</span><span class="p">)</span>
+        <span class="n">instance</span><span class="o">.</span><span class="n">city</span> <span class="o">=</span> <span class="n">validated_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;city&#39;</span><span class="p">,</span> <span class="n">instance</span><span class="o">.</span><span class="n">city</span><span class="p">)</span>
+        <span class="n">instance</span><span class="o">.</span><span class="n">postal_code</span> <span class="o">=</span> <span class="n">validated_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;postal_code&#39;</span><span class="p">,</span> <span class="n">instance</span><span class="o">.</span><span class="n">postal_code</span><span class="p">)</span>
+        <span class="n">instance</span><span class="o">.</span><span class="n">phone</span> <span class="o">=</span> <span class="n">validated_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;phone&#39;</span><span class="p">,</span> <span class="n">instance</span><span class="o">.</span><span class="n">phone</span><span class="p">)</span>
+        <span class="n">instance</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">instance</span>
+</code></pre></div></td></tr></table></div>
+              </details>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="ecole.serializers.EcoleSerializer.create" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">create</span><span class="p">(</span><span class="n">validated_data</span><span class="p">)</span></code>
+
+<a href="#ecole.serializers.EcoleSerializer.create" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Crée et retourne une nouvelle instance d'Ecole.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+            <b><code>validated_data</code></b>
+              (<code><span title="dict">dict</span></code>)
+          –
+          <div class="doc-md-description">
+            <p>Données validées pour créer l'école.</p>
+          </div>
+        </li>
+    </ul>
+
+
+<p><span class="doc-section-title">Returns:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+<b><code>Ecole</code></b>          –
+          <div class="doc-md-description">
+            <p>L'instance de l'école créée.</p>
+          </div>
+        </li>
+    </ul>
+
+
+            <details class="quote">
+              <summary>Source code in <code>ecole/serializers.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">create</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">validated_data</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Crée et retourne une nouvelle instance d&#39;Ecole.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        validated_data (dict): Données validées pour créer l&#39;école.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Ecole: L&#39;instance de l&#39;école créée.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">Ecole</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="o">**</span><span class="n">validated_data</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="ecole.serializers.EcoleSerializer.update" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">update</span><span class="p">(</span><span class="n">instance</span><span class="p">,</span> <span class="n">validated_data</span><span class="p">)</span></code>
+
+<a href="#ecole.serializers.EcoleSerializer.update" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Met à jour et retourne une instance d'Ecole existante.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+            <b><code>instance</code></b>
+              (<code><a class="autorefs autorefs-internal" title="ecole.models.Ecole" href="#ecole.models.Ecole">Ecole</a></code>)
+          –
+          <div class="doc-md-description">
+            <p>L'instance existante à mettre à jour.</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+            <b><code>validated_data</code></b>
+              (<code><span title="dict">dict</span></code>)
+          –
+          <div class="doc-md-description">
+            <p>Nouvelles données validées.</p>
+          </div>
+        </li>
+    </ul>
+
+
+<p><span class="doc-section-title">Returns:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+<b><code>Ecole</code></b>          –
+          <div class="doc-md-description">
+            <p>L'instance mise à jour.</p>
+          </div>
+        </li>
+    </ul>
+
+
+            <details class="quote">
+              <summary>Source code in <code>ecole/serializers.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">instance</span><span class="p">,</span> <span class="n">validated_data</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Met à jour et retourne une instance d&#39;Ecole existante.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        instance (Ecole): L&#39;instance existante à mettre à jour.</span>
+<span class="sd">        validated_data (dict): Nouvelles données validées.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Ecole: L&#39;instance mise à jour.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">instance</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">validated_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="n">instance</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+    <span class="n">instance</span><span class="o">.</span><span class="n">address</span> <span class="o">=</span> <span class="n">validated_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;address&#39;</span><span class="p">,</span> <span class="n">instance</span><span class="o">.</span><span class="n">address</span><span class="p">)</span>
+    <span class="n">instance</span><span class="o">.</span><span class="n">city</span> <span class="o">=</span> <span class="n">validated_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;city&#39;</span><span class="p">,</span> <span class="n">instance</span><span class="o">.</span><span class="n">city</span><span class="p">)</span>
+    <span class="n">instance</span><span class="o">.</span><span class="n">postal_code</span> <span class="o">=</span> <span class="n">validated_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;postal_code&#39;</span><span class="p">,</span> <span class="n">instance</span><span class="o">.</span><span class="n">postal_code</span><span class="p">)</span>
+    <span class="n">instance</span><span class="o">.</span><span class="n">phone</span> <span class="o">=</span> <span class="n">validated_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;phone&#39;</span><span class="p">,</span> <span class="n">instance</span><span class="o">.</span><span class="n">phone</span><span class="p">)</span>
+    <span class="n">instance</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">instance</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="ecole.serializers.EcoleSerializer.validate" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">validate</span><span class="p">(</span><span class="n">data</span><span class="p">)</span></code>
+
+<a href="#ecole.serializers.EcoleSerializer.validate" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Validation globale des données de l'école.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+            <b><code>data</code></b>
+              (<code><span title="dict">dict</span></code>)
+          –
+          <div class="doc-md-description">
+            <p>Données à valider.</p>
+          </div>
+        </li>
+    </ul>
+
+
+<p><span class="doc-section-title">Returns:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+<b><code>dict</code></b>          –
+          <div class="doc-md-description">
+            <p>Données validées.</p>
+          </div>
+        </li>
+    </ul>
+
+
+<p><span class="doc-section-title">Raises:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+              <code><span title="ValidationError">ValidationError</span></code>
+            –
+          <div class="doc-md-description">
+            <p>Si les données ne sont pas cohérentes.</p>
+          </div>
+        </li>
+    </ul>
+
+
+            <details class="quote">
+              <summary>Source code in <code>ecole/serializers.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">validate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Validation globale des données de l&#39;école.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        data (dict): Données à valider.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        dict: Données validées.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        ValidationError: Si les données ne sont pas cohérentes.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Validation supplémentaire si nécessaire</span>
+    <span class="k">return</span> <span class="n">data</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="ecole.serializers.EcoleSerializer.validate_name" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">validate_name</span><span class="p">(</span><span class="n">value</span><span class="p">)</span></code>
+
+<a href="#ecole.serializers.EcoleSerializer.validate_name" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Valide le nom de l'école.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+            <b><code>value</code></b>
+              (<code><span title="str">str</span></code>)
+          –
+          <div class="doc-md-description">
+            <p>Le nom de l'école à valider.</p>
+          </div>
+        </li>
+    </ul>
+
+
+<p><span class="doc-section-title">Returns:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+<b><code>str</code></b>          –
+          <div class="doc-md-description">
+            <p>Le nom validé.</p>
+          </div>
+        </li>
+    </ul>
+
+
+<p><span class="doc-section-title">Raises:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+              <code><span title="ValidationError">ValidationError</span></code>
+            –
+          <div class="doc-md-description">
+            <p>Si le nom est trop court.</p>
+          </div>
+        </li>
+    </ul>
+
+
+            <details class="quote">
+              <summary>Source code in <code>ecole/serializers.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">78</span>
+<span class="normal">79</span>
+<span class="normal">80</span>
+<span class="normal">81</span>
+<span class="normal">82</span>
+<span class="normal">83</span>
+<span class="normal">84</span>
+<span class="normal">85</span>
+<span class="normal">86</span>
+<span class="normal">87</span>
+<span class="normal">88</span>
+<span class="normal">89</span>
+<span class="normal">90</span>
+<span class="normal">91</span>
+<span class="normal">92</span>
+<span class="normal">93</span>
+<span class="normal">94</span>
+<span class="normal">95</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">validate_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Valide le nom de l&#39;école.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        value (str): Le nom de l&#39;école à valider.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        str: Le nom validé.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        ValidationError: Si le nom est trop court.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">value</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">serializers</span><span class="o">.</span><span class="n">ValidationError</span><span class="p">(</span>
+            <span class="s2">&quot;Le nom de l&#39;école doit contenir au moins 3 caractères.&quot;</span>
+        <span class="p">)</span>
+    <span class="k">return</span> <span class="n">value</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="ecole.serializers.EcoleSerializer.validate_phone" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">validate_phone</span><span class="p">(</span><span class="n">value</span><span class="p">)</span></code>
+
+<a href="#ecole.serializers.EcoleSerializer.validate_phone" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Valide le format du numéro de téléphone.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+            <b><code>value</code></b>
+              (<code><span title="str">str</span></code>)
+          –
+          <div class="doc-md-description">
+            <p>Le numéro de téléphone à valider.</p>
+          </div>
+        </li>
+    </ul>
+
+
+<p><span class="doc-section-title">Returns:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+<b><code>str</code></b>          –
+          <div class="doc-md-description">
+            <p>Le numéro de téléphone validé.</p>
+          </div>
+        </li>
+    </ul>
+
+
+<p><span class="doc-section-title">Raises:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+              <code><span title="ValidationError">ValidationError</span></code>
+            –
+          <div class="doc-md-description">
+            <p>Si le format du téléphone est invalide.</p>
+          </div>
+        </li>
+    </ul>
+
+
+            <details class="quote">
+              <summary>Source code in <code>ecole/serializers.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">validate_phone</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Valide le format du numéro de téléphone.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        value (str): Le numéro de téléphone à valider.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        str: Le numéro de téléphone validé.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        ValidationError: Si le format du téléphone est invalide.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Format attendu: +216 XX XXX XXX</span>
+    <span class="n">phone_pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;^\+216\s?\d</span><span class="si">{2}</span><span class="s1">\s?\d</span><span class="si">{3}</span><span class="s1">\s?\d{3,4}$&#39;</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">phone_pattern</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="n">serializers</span><span class="o">.</span><span class="n">ValidationError</span><span class="p">(</span>
+            <span class="s2">&quot;Le numéro de téléphone doit être au format international (+216 XX XXX XXX).&quot;</span>
+        <span class="p">)</span>
+    <span class="k">return</span> <span class="n">value</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="ecole.serializers.EcoleSerializer.validate_postal_code" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">validate_postal_code</span><span class="p">(</span><span class="n">value</span><span class="p">)</span></code>
+
+<a href="#ecole.serializers.EcoleSerializer.validate_postal_code" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Valide le format du code postal tunisien.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+            <b><code>value</code></b>
+              (<code><span title="str">str</span></code>)
+          –
+          <div class="doc-md-description">
+            <p>Le code postal à valider.</p>
+          </div>
+        </li>
+    </ul>
+
+
+<p><span class="doc-section-title">Returns:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+<b><code>str</code></b>          –
+          <div class="doc-md-description">
+            <p>Le code postal validé.</p>
+          </div>
+        </li>
+    </ul>
+
+
+<p><span class="doc-section-title">Raises:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+              <code><span title="ValidationError">ValidationError</span></code>
+            –
+          <div class="doc-md-description">
+            <p>Si le code postal n'est pas composé de 4 chiffres.</p>
+          </div>
+        </li>
+    </ul>
+
+
+            <details class="quote">
+              <summary>Source code in <code>ecole/serializers.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">validate_postal_code</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Valide le format du code postal tunisien.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        value (str): Le code postal à valider.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        str: Le code postal validé.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        ValidationError: Si le code postal n&#39;est pas composé de 4 chiffres.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;^\d</span><span class="si">{4}</span><span class="s1">$&#39;</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="n">serializers</span><span class="o">.</span><span class="n">ValidationError</span><span class="p">(</span>
+            <span class="s2">&quot;Le code postal doit contenir exactement 4 chiffres.&quot;</span>
+        <span class="p">)</span>
+    <span class="k">return</span> <span class="n">value</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div><hr />
+<h2 id="3-vues-ecoleviews">3. Vues (<code>ecole.views</code>)<a class="headerlink" href="#3-vues-ecoleviews" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Les vues utilisent les décorateurs DRF pour gérer <strong>authentification, permissions et routing</strong>.  </li>
+<li>Endpoints principaux :</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Vue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ecole_list_create</code></td>
+<td>Liste toutes les écoles ou crée une nouvelle école</td>
+</tr>
+<tr>
+<td><code>ecole_detail</code></td>
+<td>Détails, modification ou suppression d’une école</td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<a id="ecole.views.ecole_list_create"></a>
+    <div class="doc doc-contents first">
+
+        <p>Liste et création d'écoles.</p>
+<h4 id="ecole.views.ecole_list_create--methodes-disponibles">Méthodes disponibles :<a class="headerlink" href="#ecole.views.ecole_list_create--methodes-disponibles" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>GET</strong> : Récupère la liste de toutes les écoles.</li>
+<li><strong>POST</strong> : Crée une nouvelle école (réservé aux administrateurs).</li>
+</ul>
+<h4 id="ecole.views.ecole_list_create--conditions-dacces">Conditions d'accès :<a class="headerlink" href="#ecole.views.ecole_list_create--conditions-dacces" title="Permanent link">&para;</a></h4>
+<ul>
+<li>L'utilisateur doit être authentifié.</li>
+<li>La création (<code>POST</code>) nécessite que l'utilisateur soit administrateur (<code>is_staff=True</code> ou <code>role='admin'</code>).</li>
+</ul>
+<h4 id="ecole.views.ecole_list_create--reponses">Réponses :<a class="headerlink" href="#ecole.views.ecole_list_create--reponses" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>200 OK</strong> : Retourne la liste des écoles (GET).</li>
+<li><strong>201 CREATED</strong> : Retourne les détails de l’école créée (POST réussi).</li>
+<li><strong>403 FORBIDDEN</strong> : Si un utilisateur non-admin tente de créer une école.</li>
+<li><strong>400 BAD REQUEST</strong> : Si les données fournies sont invalides.</li>
+</ul>
+<h4 id="ecole.views.ecole_list_create--exemple-de-requete-post">Exemple de requête POST :<a class="headerlink" href="#ecole.views.ecole_list_create--exemple-de-requete-post" title="Permanent link">&para;</a></h4>
+<pre><code class="language-json">{
+    &quot;name&quot;: &quot;École Nationale d'Informatique&quot;,
+    &quot;address&quot;: &quot;Route de Tunis&quot;,
+    &quot;city&quot;: &quot;Sousse&quot;,
+    &quot;postal_code&quot;: &quot;4000&quot;,
+    &quot;phone&quot;: &quot;+216 73 123 456&quot;
+}
+</code></pre>
+<h4 id="ecole.views.ecole_list_create--exemple-de-reponse-get">Exemple de réponse (GET) :<a class="headerlink" href="#ecole.views.ecole_list_create--exemple-de-reponse-get" title="Permanent link">&para;</a></h4>
+<pre><code class="language-json">[
+    {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;École Nationale d'Informatique&quot;,
+        &quot;address&quot;: &quot;Route de Tunis&quot;,
+        &quot;city&quot;: &quot;Sousse&quot;,
+        &quot;postal_code&quot;: &quot;4000&quot;,
+        &quot;phone&quot;: &quot;+216 73 123 456&quot;,
+        &quot;students_count&quot;: 250,
+        &quot;created_at&quot;: &quot;2025-11-07T09:12:34Z&quot;
+    }
+]
+</code></pre>
+
+
+            <details class="quote">
+              <summary>Source code in <code>ecole/views.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@api_view</span><span class="p">([</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span> <span class="s1">&#39;POST&#39;</span><span class="p">])</span>
+<span class="nd">@permission_classes</span><span class="p">([</span><span class="n">permissions</span><span class="o">.</span><span class="n">IsAuthenticated</span><span class="p">])</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">ecole_list_create</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Liste et création d&#39;écoles.</span>
+
+<span class="sd">    ### Méthodes disponibles :</span>
+<span class="sd">    - **GET** : Récupère la liste de toutes les écoles.</span>
+<span class="sd">    - **POST** : Crée une nouvelle école (réservé aux administrateurs).</span>
+
+<span class="sd">    ### Conditions d&#39;accès :</span>
+<span class="sd">    - L&#39;utilisateur doit être authentifié.</span>
+<span class="sd">    - La création (`POST`) nécessite que l&#39;utilisateur soit administrateur (`is_staff=True` ou `role=&#39;admin&#39;`).</span>
+
+<span class="sd">    ### Réponses :</span>
+<span class="sd">    - **200 OK** : Retourne la liste des écoles (GET).</span>
+<span class="sd">    - **201 CREATED** : Retourne les détails de l’école créée (POST réussi).</span>
+<span class="sd">    - **403 FORBIDDEN** : Si un utilisateur non-admin tente de créer une école.</span>
+<span class="sd">    - **400 BAD REQUEST** : Si les données fournies sont invalides.</span>
+
+<span class="sd">    ### Exemple de requête POST :</span>
+<span class="sd">    ```json</span>
+<span class="sd">    {</span>
+<span class="sd">        &quot;name&quot;: &quot;École Nationale d&#39;Informatique&quot;,</span>
+<span class="sd">        &quot;address&quot;: &quot;Route de Tunis&quot;,</span>
+<span class="sd">        &quot;city&quot;: &quot;Sousse&quot;,</span>
+<span class="sd">        &quot;postal_code&quot;: &quot;4000&quot;,</span>
+<span class="sd">        &quot;phone&quot;: &quot;+216 73 123 456&quot;</span>
+<span class="sd">    }</span>
+<span class="sd">    ```</span>
+
+<span class="sd">    ### Exemple de réponse (GET) :</span>
+<span class="sd">    ```json</span>
+<span class="sd">    [</span>
+<span class="sd">        {</span>
+<span class="sd">            &quot;id&quot;: 1,</span>
+<span class="sd">            &quot;name&quot;: &quot;École Nationale d&#39;Informatique&quot;,</span>
+<span class="sd">            &quot;address&quot;: &quot;Route de Tunis&quot;,</span>
+<span class="sd">            &quot;city&quot;: &quot;Sousse&quot;,</span>
+<span class="sd">            &quot;postal_code&quot;: &quot;4000&quot;,</span>
+<span class="sd">            &quot;phone&quot;: &quot;+216 73 123 456&quot;,</span>
+<span class="sd">            &quot;students_count&quot;: 250,</span>
+<span class="sd">            &quot;created_at&quot;: &quot;2025-11-07T09:12:34Z&quot;</span>
+<span class="sd">        }</span>
+<span class="sd">    ]</span>
+<span class="sd">    ```</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">request</span><span class="o">.</span><span class="n">method</span> <span class="o">==</span> <span class="s1">&#39;GET&#39;</span><span class="p">:</span>
+        <span class="n">ecoles</span> <span class="o">=</span> <span class="n">Ecole</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+        <span class="n">serializer</span> <span class="o">=</span> <span class="n">EcoleSerializer</span><span class="p">(</span><span class="n">ecoles</span><span class="p">,</span> <span class="n">many</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">Response</span><span class="p">(</span><span class="n">serializer</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+
+    <span class="k">elif</span> <span class="n">request</span><span class="o">.</span><span class="n">method</span> <span class="o">==</span> <span class="s1">&#39;POST&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">is_staff</span> <span class="ow">and</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="p">,</span> <span class="s2">&quot;role&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="o">!=</span> <span class="s1">&#39;admin&#39;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">Response</span><span class="p">(</span>
+                <span class="p">{</span><span class="s2">&quot;error&quot;</span><span class="p">:</span> <span class="s2">&quot;Seul un administrateur peut créer une école.&quot;</span><span class="p">},</span>
+                <span class="n">status</span><span class="o">=</span><span class="n">status</span><span class="o">.</span><span class="n">HTTP_403_FORBIDDEN</span>
+            <span class="p">)</span>
+        <span class="n">serializer</span> <span class="o">=</span> <span class="n">EcoleSerializer</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">request</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">serializer</span><span class="o">.</span><span class="n">is_valid</span><span class="p">():</span>
+            <span class="n">serializer</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+            <span class="k">return</span> <span class="n">Response</span><span class="p">(</span><span class="n">serializer</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">status</span><span class="o">=</span><span class="n">status</span><span class="o">.</span><span class="n">HTTP_201_CREATED</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">Response</span><span class="p">(</span><span class="n">serializer</span><span class="o">.</span><span class="n">errors</span><span class="p">,</span> <span class="n">status</span><span class="o">=</span><span class="n">status</span><span class="o">.</span><span class="n">HTTP_400_BAD_REQUEST</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<a id="ecole.views.ecole_detail"></a>
+    <div class="doc doc-contents first">
+
+        <p>Consultation, mise à jour ou suppression d'une école spécifique.</p>
+<h4 id="ecole.views.ecole_detail--methodes-disponibles">Méthodes disponibles :<a class="headerlink" href="#ecole.views.ecole_detail--methodes-disponibles" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>GET</strong> : Récupère les détails d’une école spécifique.</li>
+<li><strong>PUT</strong> : Met à jour les informations d’une école (réservé aux administrateurs).</li>
+<li><strong>DELETE</strong> : Supprime une école (réservé aux administrateurs).</li>
+</ul>
+<h4 id="ecole.views.ecole_detail--parametres">Paramètres :<a class="headerlink" href="#ecole.views.ecole_detail--parametres" title="Permanent link">&para;</a></h4>
+<ul>
+<li><code>pk</code> <em>(int)</em> : Identifiant unique de l’école.</li>
+</ul>
+<h4 id="ecole.views.ecole_detail--conditions-dacces">Conditions d'accès :<a class="headerlink" href="#ecole.views.ecole_detail--conditions-dacces" title="Permanent link">&para;</a></h4>
+<ul>
+<li>L'utilisateur doit être authentifié.</li>
+<li>Les opérations PUT et DELETE sont réservées aux administrateurs.</li>
+</ul>
+<h4 id="ecole.views.ecole_detail--reponses">Réponses :<a class="headerlink" href="#ecole.views.ecole_detail--reponses" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>200 OK</strong> : Retourne les détails de l’école (GET ou PUT réussi).</li>
+<li><strong>204 NO CONTENT</strong> : Confirme la suppression réussie.</li>
+<li><strong>403 FORBIDDEN</strong> : Si un utilisateur non-admin tente de modifier/supprimer.</li>
+<li><strong>404 NOT FOUND</strong> : Si l’école demandée n’existe pas.</li>
+<li><strong>400 BAD REQUEST</strong> : Si les données envoyées lors de la mise à jour sont invalides.</li>
+</ul>
+<h4 id="ecole.views.ecole_detail--exemple-de-reponse-get">Exemple de réponse (GET) :<a class="headerlink" href="#ecole.views.ecole_detail--exemple-de-reponse-get" title="Permanent link">&para;</a></h4>
+<pre><code class="language-json">{
+    &quot;id&quot;: 2,
+    &quot;name&quot;: &quot;Institut Supérieur de Technologie&quot;,
+    &quot;address&quot;: &quot;Avenue de la République&quot;,
+    &quot;city&quot;: &quot;Tunis&quot;,
+    &quot;postal_code&quot;: &quot;1002&quot;,
+    &quot;phone&quot;: &quot;+216 71 456 789&quot;,
+    &quot;students_count&quot;: 120,
+    &quot;created_at&quot;: &quot;2025-10-30T14:30:00Z&quot;
+}
+</code></pre>
+
+
+            <details class="quote">
+              <summary>Source code in <code>ecole/views.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@api_view</span><span class="p">([</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span> <span class="s1">&#39;PUT&#39;</span><span class="p">,</span> <span class="s1">&#39;DELETE&#39;</span><span class="p">])</span>
+<span class="nd">@permission_classes</span><span class="p">([</span><span class="n">permissions</span><span class="o">.</span><span class="n">IsAuthenticated</span><span class="p">])</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">ecole_detail</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">pk</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Consultation, mise à jour ou suppression d&#39;une école spécifique.</span>
+
+<span class="sd">    ### Méthodes disponibles :</span>
+<span class="sd">    - **GET** : Récupère les détails d’une école spécifique.</span>
+<span class="sd">    - **PUT** : Met à jour les informations d’une école (réservé aux administrateurs).</span>
+<span class="sd">    - **DELETE** : Supprime une école (réservé aux administrateurs).</span>
+
+<span class="sd">    ### Paramètres :</span>
+<span class="sd">    - `pk` *(int)* : Identifiant unique de l’école.</span>
+
+<span class="sd">    ### Conditions d&#39;accès :</span>
+<span class="sd">    - L&#39;utilisateur doit être authentifié.</span>
+<span class="sd">    - Les opérations PUT et DELETE sont réservées aux administrateurs.</span>
+
+<span class="sd">    ### Réponses :</span>
+<span class="sd">    - **200 OK** : Retourne les détails de l’école (GET ou PUT réussi).</span>
+<span class="sd">    - **204 NO CONTENT** : Confirme la suppression réussie.</span>
+<span class="sd">    - **403 FORBIDDEN** : Si un utilisateur non-admin tente de modifier/supprimer.</span>
+<span class="sd">    - **404 NOT FOUND** : Si l’école demandée n’existe pas.</span>
+<span class="sd">    - **400 BAD REQUEST** : Si les données envoyées lors de la mise à jour sont invalides.</span>
+
+<span class="sd">    ### Exemple de réponse (GET) :</span>
+<span class="sd">    ```json</span>
+<span class="sd">    {</span>
+<span class="sd">        &quot;id&quot;: 2,</span>
+<span class="sd">        &quot;name&quot;: &quot;Institut Supérieur de Technologie&quot;,</span>
+<span class="sd">        &quot;address&quot;: &quot;Avenue de la République&quot;,</span>
+<span class="sd">        &quot;city&quot;: &quot;Tunis&quot;,</span>
+<span class="sd">        &quot;postal_code&quot;: &quot;1002&quot;,</span>
+<span class="sd">        &quot;phone&quot;: &quot;+216 71 456 789&quot;,</span>
+<span class="sd">        &quot;students_count&quot;: 120,</span>
+<span class="sd">        &quot;created_at&quot;: &quot;2025-10-30T14:30:00Z&quot;</span>
+<span class="sd">    }</span>
+<span class="sd">    ```</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">ecole</span> <span class="o">=</span> <span class="n">Ecole</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="n">pk</span><span class="p">)</span>
+    <span class="k">except</span> <span class="n">Ecole</span><span class="o">.</span><span class="n">DoesNotExist</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">Response</span><span class="p">({</span><span class="s1">&#39;error&#39;</span><span class="p">:</span> <span class="s1">&#39;École non trouvée&#39;</span><span class="p">},</span> <span class="n">status</span><span class="o">=</span><span class="n">status</span><span class="o">.</span><span class="n">HTTP_404_NOT_FOUND</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">request</span><span class="o">.</span><span class="n">method</span> <span class="o">==</span> <span class="s1">&#39;GET&#39;</span><span class="p">:</span>
+        <span class="n">serializer</span> <span class="o">=</span> <span class="n">EcoleSerializer</span><span class="p">(</span><span class="n">ecole</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">Response</span><span class="p">(</span><span class="n">serializer</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+
+    <span class="k">elif</span> <span class="n">request</span><span class="o">.</span><span class="n">method</span> <span class="o">==</span> <span class="s1">&#39;PUT&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">is_staff</span> <span class="ow">and</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="p">,</span> <span class="s2">&quot;role&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="o">!=</span> <span class="s1">&#39;admin&#39;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">Response</span><span class="p">(</span>
+                <span class="p">{</span><span class="s2">&quot;error&quot;</span><span class="p">:</span> <span class="s2">&quot;Seul un administrateur peut modifier une école.&quot;</span><span class="p">},</span>
+                <span class="n">status</span><span class="o">=</span><span class="n">status</span><span class="o">.</span><span class="n">HTTP_403_FORBIDDEN</span>
+            <span class="p">)</span>
+        <span class="n">serializer</span> <span class="o">=</span> <span class="n">EcoleSerializer</span><span class="p">(</span><span class="n">ecole</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">request</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">serializer</span><span class="o">.</span><span class="n">is_valid</span><span class="p">():</span>
+            <span class="n">serializer</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+            <span class="k">return</span> <span class="n">Response</span><span class="p">(</span><span class="n">serializer</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">Response</span><span class="p">(</span><span class="n">serializer</span><span class="o">.</span><span class="n">errors</span><span class="p">,</span> <span class="n">status</span><span class="o">=</span><span class="n">status</span><span class="o">.</span><span class="n">HTTP_400_BAD_REQUEST</span><span class="p">)</span>
+
+    <span class="k">elif</span> <span class="n">request</span><span class="o">.</span><span class="n">method</span> <span class="o">==</span> <span class="s1">&#39;DELETE&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">is_staff</span> <span class="ow">and</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="p">,</span> <span class="s2">&quot;role&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="o">!=</span> <span class="s1">&#39;admin&#39;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">Response</span><span class="p">(</span>
+                <span class="p">{</span><span class="s2">&quot;error&quot;</span><span class="p">:</span> <span class="s2">&quot;Seul un administrateur peut supprimer une école.&quot;</span><span class="p">},</span>
+                <span class="n">status</span><span class="o">=</span><span class="n">status</span><span class="o">.</span><span class="n">HTTP_403_FORBIDDEN</span>
+            <span class="p">)</span>
+        <span class="n">ecole</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">Response</span><span class="p">({</span><span class="s1">&#39;message&#39;</span><span class="p">:</span> <span class="s1">&#39;École supprimée avec succès&#39;</span><span class="p">},</span> <span class="n">status</span><span class="o">=</span><span class="n">status</span><span class="o">.</span><span class="n">HTTP_204_NO_CONTENT</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div><hr />
+<h2 id="4-urls-ecoleurls">4. URLs (<code>ecole.urls</code>)<a class="headerlink" href="#4-urls-ecoleurls" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Configure le routing API pour le module Ecole.  </li>
+<li>Routes disponibles :</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Méthode HTTP</th>
+<th>Endpoint</th>
+<th>Description</th>
+<th>Permission requise</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GET</td>
+<td>/api/ecoles/</td>
+<td>Liste toutes les écoles</td>
+<td>Utilisateur authentifié</td>
+</tr>
+<tr>
+<td>POST</td>
+<td>/api/ecoles/</td>
+<td>Crée une nouvelle école</td>
+<td>Administrateur</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>/api/ecoles/{id}/</td>
+<td>Détails d'une école</td>
+<td>Utilisateur authentifié</td>
+</tr>
+<tr>
+<td>PUT</td>
+<td>/api/ecoles/{id}/</td>
+<td>Modifie une école complète</td>
+<td>Administrateur</td>
+</tr>
+<tr>
+<td>PATCH</td>
+<td>/api/ecoles/{id}/</td>
+<td>Modification partielle</td>
+<td>Administrateur</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td>/api/ecoles/{id}/</td>
+<td>Supprime une école</td>
+<td>Administrateur</td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="ecole.urls"></a>
+    <div class="doc doc-contents first">
+
+        <p>Définition des routes de l'application <strong>users</strong> liées à la gestion des écoles.</p>
+<h4 id="ecole.urls--details-des-endpoints">Détails des Endpoints :<a class="headerlink" href="#ecole.urls--details-des-endpoints" title="Permanent link">&para;</a></h4>
+<h5 id="ecole.urls--get-ecoles">🔹 <code>GET /ecoles/</code><a class="headerlink" href="#ecole.urls--get-ecoles" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>Description</strong> : Récupère la liste de toutes les écoles.</li>
+<li><strong>Accès</strong> : Utilisateurs authentifiés.</li>
+<li><strong>Réponse (200)</strong> :</li>
+</ul>
+<pre><code class="language-json">  [
+    {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;École Nationale d'Informatique&quot;,
+      &quot;address&quot;: &quot;Route de Tunis&quot;,
+      &quot;city&quot;: &quot;Sousse&quot;,
+      &quot;postal_code&quot;: &quot;4000&quot;,
+      &quot;phone&quot;: &quot;+216 73 123 456&quot;,
+      &quot;students_count&quot;: 250,
+      &quot;created_at&quot;: &quot;2025-11-07T09:12:34Z&quot;
+    }
+  ]
+</code></pre>
+<h5 id="ecole.urls--post-ecoles">🔹 <code>POST /ecoles/</code><a class="headerlink" href="#ecole.urls--post-ecoles" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>Description</strong> : Crée une nouvelle école.</li>
+<li><strong>Accès</strong> : Réservé aux administrateurs.</li>
+<li><strong>Exemple de requête</strong> :</li>
+</ul>
+<pre><code class="language-json">  {
+    &quot;name&quot;: &quot;Institut Supérieur de Technologie&quot;,
+    &quot;address&quot;: &quot;Avenue de la République&quot;,
+    &quot;city&quot;: &quot;Tunis&quot;,
+    &quot;postal_code&quot;: &quot;1002&quot;,
+    &quot;phone&quot;: &quot;+216 71 456 789&quot;
+  }
+</code></pre>
+<ul>
+<li><strong>Réponse (201)</strong> : Détails de l'école créée.</li>
+</ul>
+<h5 id="ecole.urls--get-ecolesintpk">🔹 <code>GET /ecoles/&lt;int:pk&gt;/</code><a class="headerlink" href="#ecole.urls--get-ecolesintpk" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>Description</strong> : Récupère les informations d'une école spécifique.</li>
+<li><strong>Accès</strong> : Utilisateurs authentifiés.</li>
+</ul>
+<h5 id="ecole.urls--put-ecolesintpk">🔹 <code>PUT /ecoles/&lt;int:pk&gt;/</code><a class="headerlink" href="#ecole.urls--put-ecolesintpk" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>Description</strong> : Met à jour les informations d'une école existante.</li>
+<li><strong>Accès</strong> : Réservé aux administrateurs.</li>
+</ul>
+<h5 id="ecole.urls--delete-ecolesintpk">🔹 <code>DELETE /ecoles/&lt;int:pk&gt;/</code><a class="headerlink" href="#ecole.urls--delete-ecolesintpk" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>Description</strong> : Supprime une école.</li>
+<li><strong>Accès</strong> : Réservé aux administrateurs.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><hr />
+<h2 id="5-tests-ecoletests">5. Tests (<code>ecole.tests</code>)<a class="headerlink" href="#5-tests-ecoletests" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Suite de <strong>tests unitaires complète</strong> couvrant toutes les opérations CRUD avec différents niveaux de permissions.  </li>
+<li>Vérifie les <strong>scénarios de succès et d’échec</strong> selon le rôle de l’utilisateur (admin ou standard).  </li>
+</ul>
+<h3 id="51-tableau-recapitulatif-des-tests-crud">5.1. Tableau récapitulatif des tests CRUD<a class="headerlink" href="#51-tableau-recapitulatif-des-tests-crud" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Méthode</th>
+<th>Rôle</th>
+<th>Résultat attendu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>test_get_ecole_list_authenticated</code></td>
+<td>GET</td>
+<td>user</td>
+<td>200 OK</td>
+</tr>
+<tr>
+<td><code>test_get_ecole_list_unauthenticated</code></td>
+<td>GET</td>
+<td>anonyme</td>
+<td>401/403</td>
+</tr>
+<tr>
+<td><code>test_get_ecole_detail_authenticated</code></td>
+<td>GET</td>
+<td>user</td>
+<td>200 OK</td>
+</tr>
+<tr>
+<td><code>test_post_ecole_admin</code></td>
+<td>POST</td>
+<td>admin</td>
+<td>201 Created</td>
+</tr>
+<tr>
+<td><code>test_post_ecole_non_admin</code></td>
+<td>POST</td>
+<td>user</td>
+<td>403 Forbidden</td>
+</tr>
+<tr>
+<td><code>test_put_ecole_admin</code></td>
+<td>PUT</td>
+<td>admin</td>
+<td>200 OK</td>
+</tr>
+<tr>
+<td><code>test_put_ecole_non_admin</code></td>
+<td>PUT</td>
+<td>user</td>
+<td>403 Forbidden</td>
+</tr>
+<tr>
+<td><code>test_delete_ecole_admin</code></td>
+<td>DELETE</td>
+<td>admin</td>
+<td>204 No Content</td>
+</tr>
+<tr>
+<td><code>test_delete_ecole_non_admin</code></td>
+<td>DELETE</td>
+<td>user</td>
+<td>403 Forbidden</td>
+</tr>
+</tbody>
+</table>
+<h3 id="52-notes-sur-les-tests">5.2. Notes sur les tests<a class="headerlink" href="#52-notes-sur-les-tests" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Les tests vérifient <strong>l’authentification, les permissions et les réponses HTTP</strong> pour chaque endpoint.  </li>
+<li>Permet de garantir que seuls les utilisateurs autorisés (admin) peuvent créer, modifier ou supprimer une école, tandis que les utilisateurs standards ne peuvent que consulter les données.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

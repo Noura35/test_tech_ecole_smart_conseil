@@ -127,6 +127,53 @@ Application Django REST pour la gestion des utilisateurs, écoles et fichiers av
 ### Fichiers
 - Endpoints disponibles dans le module `/api/files/`
 
+
+## 📚 Documentation
+
+Ce projet utilise MkDocs pour générer une documentation interactive.
+
+### Lancer la documentation en local
+```bash
+# Installation locale
+mkdocs serve
+```
+
+La documentation sera accessible sur `http://localhost:8000/`
+
+### Avec Docker
+
+Ajoutez ce service dans votre `docker-compose.yml` :
+```yaml
+  docs:
+    build: .
+    command: mkdocs serve -a 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8002:8000"
+```
+
+Puis lancez :
+```bash
+docker-compose up docs
+```
+
+La documentation sera accessible sur `http://localhost:8002/`
+
+### Générer la documentation statique
+```bash
+mkdocs build
+```
+
+Les fichiers HTML seront générés dans le dossier `site/`.
+
+### Déployer sur GitHub Pages
+```bash
+mkdocs gh-deploy
+```
+
+
+
 ## 📁 Structure du projet
 
 ```
@@ -136,6 +183,10 @@ tech-test/
 ├── users/                # Module de gestion des utilisateurs
 ├── ecole/                # Module de gestion des écoles
 ├── files/                # Module de gestion des fichiers
+├── docs/                 # Documentation MkDocs
+│   └── index.md          # Page d'accueil de la documentation
+├── media/                # Sauvegarder files
+├── mkdocs.yml            # Configuration MkDocs
 ├── manage.py             # Script de gestion Django
 ├── requirements.txt      # Dépendances Python
 ├── docker-compose.yml    # Configuration Docker
@@ -161,10 +212,4 @@ python manage.py test users
 python manage.py test ecole
 ```
 
-## 📄 Licence
 
-Ce projet est sous licence MIT. Consultez le fichier [LICENSE](LICENSE) pour plus de détails.
-
----
-
-**Note :** Pour toute question ou contribution, n'hésitez pas à ouvrir une issue ou une pull request sur le dépôt GitHub.
